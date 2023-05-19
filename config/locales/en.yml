@@ -30,4 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  site:
+    index:
+      heading: "Hello world"
+      form_footer: "© %{year} Mix & Go. All rights reserved."
