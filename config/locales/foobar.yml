@@ -1,0 +1,13 @@
+foobar:
+  helpers:
+    label:
+      username: "Eman resu"
+      password: "Drowssap terces"
+    submit:
+      submit: "Ti dnes!"
+  site:
+    index:
+      heading: "Dlrow olleh"
+      info: "Drowssap a esoohc esaelp."
+      forgot_password: "Drowssap togrof?"
+      form_footer: "© %{year} Mix & Go. Devreser sthgir lla."

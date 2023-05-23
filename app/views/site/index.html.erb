@@ -1,5 +1,7 @@
 <div class="mt-8 prose">
   <h1><%= translate(".heading") %></h1>
+  <%= link_to t(".english"), root_path(locale: :en) %> |
+  <%= link_to t(".foobar"), root_path(locale: :foobar) %>
 
   <div class="w-full max-w-xs">
     <%= form_with url: false, class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 border" do |f| %>
