@@ -30,7 +30,15 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  helpers:
+    label:
+      username: "User name"
+      password: "Secret password"
+    submit:
+      submit: "Send it!"
   site:
     index:
       heading: "Hello world"
+      info: "Please choose a password."
+      forgot_password: "Forgot password?"
       form_footer: "© %{year} Mix & Go. All rights reserved."

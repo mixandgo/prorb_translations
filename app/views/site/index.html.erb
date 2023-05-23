@@ -10,11 +10,11 @@
       <div class="mb-6">
         <%= f.label :password, class: "label" %>
         <%= f.password_field :password, class: "input" %>
-        <p class="text-red-500 text-xs italic">Please choose a password.</p>
+        <p class="text-red-500 text-xs italic"><%= translate(".info") %></p>
       </div>
       <div class="flex items-center justify-between">
-        <%= f.submit "Sign in", class: "button" %>
-        <%= link_to "Forgot password?", "", class: "link" %>
+        <%= f.submit nil, class: "button" %>
+        <%= link_to t(".forgot_password"), "", class: "link" %>
       </div>
     <% end %>
     <p class="text-center text-gray-500 text-xs">
