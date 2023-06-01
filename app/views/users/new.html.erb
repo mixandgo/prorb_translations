@@ -4,7 +4,15 @@
   <%= link_to t(".foobar"), root_path(locale: :foobar) %>
 
   <div class="w-full max-w-xs">
-    <%= form_with url: false, class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 border" do |f| %>
+    <%= form_with model: @user, class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 border" do |f| %>
+      <% if @user.errors.any? %>
+        <div class="rounded bg-rose-100 p-2 mb-4">
+          <% @user.errors.full_messages.each do |message| %>
+            <div><%= message %></div>
+          <% end %>
+        </div>
+      <% end %>
+      <%= hidden_field_tag :locale, params[:locale] %>
       <div class="mb-4">
         <%= f.label :username, class: "label" %>
         <%= f.text_field :username, class: "input" %>

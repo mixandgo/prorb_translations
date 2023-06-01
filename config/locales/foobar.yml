@@ -1,12 +1,25 @@
 foobar:
+  activemodel:
+    errors:
+      messages:
+        blank: "tneserp eb tsum"
+      attributes:
+        user:
+          username: "Eman resu"
+          password: "Drowssap terces"
+      models:
+        user:
+          one: "Resu"
+          other: "Sresu"
   helpers:
     label:
-      username: "Eman resu"
-      password: "Drowssap terces"
+      user:
+        username: "Eman resu"
+        password: "Drowssap terces"
     submit:
       submit: "Ti dnes!"
-  site:
-    index:
+  users:
+    new:
       heading: "Dlrow olleh"
       info: "Drowssap a esoohc esaelp."
       forgot_password: "Drowssap togrof?"
